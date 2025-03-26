@@ -8,8 +8,7 @@ source scripts/logger.sh
 
 list_files() {
     echo "+----------------------------------------+"
-    echo "|          LIST FILES SCRIPT             |"
-    echo "|   Lists all files and subdirectories   |"
+    echo "|               LIST FILES               |"
     echo "+----------------------------------------+"
     echo ""
 
