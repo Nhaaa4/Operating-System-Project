@@ -4,15 +4,15 @@
 RED='\033[0;31m'
 NC='\033[0m' # No Color
 
-echo "+----------------------------------------+"
-echo "|          LIST FILES SCRIPT             |"
-echo "|   Lists all files and subdirectories   |"
-echo "+----------------------------------------+"
-echo ""
-
 source scripts/logger.sh
 
 list_files() {
+    echo "+----------------------------------------+"
+    echo "|          LIST FILES SCRIPT             |"
+    echo "|   Lists all files and subdirectories   |"
+    echo "+----------------------------------------+"
+    echo ""
+
     read -rp "Enter directory path: " dir
     echo ""
 
