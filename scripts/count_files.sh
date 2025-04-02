@@ -22,6 +22,13 @@ count_files() {
     fi
 
     count=$(find "$dir" -type f | wc -l)
-    echo "Total files in $dir: $count file(s)"
-    log_action "Counted $count files in $dir"
+
+    if [ $? -eq 0 ]; then
+        echo "Total files in $dir: $count file(s)"
+        log_action "Counted $count files in $dir"
+    else
+        echo "Failed to count files in $dir!"
+        log_action "Failed to count files in $dir"
+    fi
+
 }

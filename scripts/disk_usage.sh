@@ -22,6 +22,12 @@ disk_usage() {
     fi
 
     usage=$(du -sh "$dir")
-    echo "Disk usage: $usage"
-    log_action "Checked disk usage of $dir: $usage"
+    if [ $? -eq 0 ]; then
+        echo "Disk usage: $usage"
+        log_action "Checked disk usage of $dir: $usage"
+    else
+        echo "Error: Directory $dir does not exist."
+        log_action "Attempted to check disk usage of non-existent directory: $dir"
+    fi
+
 }

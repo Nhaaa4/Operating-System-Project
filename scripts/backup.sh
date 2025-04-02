@@ -31,6 +31,13 @@ function backup() {
   fi
 
   cp -r "$source" "$destination"
-  echo "Backup completed: $source -> $destination"
-  log_action "Backup: $source -> $destination"
+
+  if [ $? -eq 0 ]; then
+      echo "Backup completed: $source -> $destination"
+      log_action "Backup successful: $source -> $destination"
+  else
+      echo "Backup failed!"
+      log_action "Backup failed: $source -> $destination"
+  fi
+
 }

@@ -6,8 +6,6 @@ NC='\033[0m' # No Color
 
 source scripts/logger.sh
 
-source scripts/logger.sh
-
 compress() {
     clear
     echo "+----------------------------------------------+"
@@ -44,6 +42,13 @@ compress() {
 
     # Compress files using zip
     zip -r "${dest}/${archive}.zip" "$base_src"
-    echo "Compression completed: ${dest}/${archive}.zip"
-    log_action "Compressed $src into ${dest}/${archive}.zip"
+
+    if [ $? -eq 0 ]; then
+        echo "Compression completed: ${dest}/${archive}.zip"
+        log_action "Compressed $src into ${dest}/${archive}.zip"
+    else
+        echo "Compression failed!"
+        log_action "Failed to compress $src into ${dest}/${archive}.zip"
+    fi
+
 }
