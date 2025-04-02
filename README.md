@@ -107,7 +107,7 @@ Select an option: _
 
 If you'd like to contribute, feel free to fork the repository and submit a pull request.
 For any inquiries or collaboration, you can contact us at:
-- Email: panhasovan51@gmail.com\
+- Email: panhasovan51@gmail.com
 - Github: [Nhaaa4](https://github.com/Nhaaa4)
 
 ## License
