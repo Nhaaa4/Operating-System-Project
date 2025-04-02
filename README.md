@@ -91,9 +91,9 @@ file-management-script/
 ## Example Output
 
 ```
-==============================================
-       FILE & DIRECTORY MANAGEMENT
-==============================================
++--------------------------------------------+
+|       FILE & DIRECTORY MANAGEMENT          |
++--------------------------------------------+
 1. List files
 2. Backup files
 3. Count files
