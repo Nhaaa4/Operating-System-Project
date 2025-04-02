@@ -5,12 +5,12 @@ RED='\033[0;31m'
 NC='\033[0m' # No Color
 
 # Import functions from external script files
-source scripts/list_files.sh
-source scripts/backup.sh
-source scripts/count_files.sh
-source scripts/disk_usage.sh
-source scripts/search.sh
-source scripts/compress.sh
+. scripts/list_files.sh
+. scripts/backup.sh
+. scripts/count_files.sh
+. scripts/disk_usage.sh
+. scripts/search.sh
+. scripts/compress.sh
 
 pause() {
     read -p "$*"

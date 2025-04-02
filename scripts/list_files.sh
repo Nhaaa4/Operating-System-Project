@@ -7,6 +7,8 @@ NC='\033[0m' # No Color
 source scripts/logger.sh
 
 list_files() {
+    clear
+
     echo "+----------------------------------------+"
     echo "|               LIST FILES               |"
     echo "+----------------------------------------+"
@@ -34,5 +36,3 @@ list_files() {
 
     log_action "Listed files in $dir"
 }
-
-list_files
