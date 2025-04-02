@@ -29,6 +29,10 @@ This project is a Bash script that provides a menu-driven interface for managing
     ```sh
     wsl --install
     ```
+  - Ensure that Ubuntu is the default in WSL on Windows.
+    ```sh
+    wsl --set-default Ubuntu
+    ``` 
   - Restart your computer if neccessary.
   - If have any issue or something, [click this](https://learn.microsoft.com/en-us/windows/wsl/install)
 2. Open WSL and install required packages.
