@@ -84,6 +84,7 @@ file-management-script/
 │   │-- compress.sh     # Function for compression
 |-- logs/               # Directory for save activities
 |   |-- script.log      # Save user log
+|-- LICENSE
 │-- README.md           # Documentation
 ```
 
