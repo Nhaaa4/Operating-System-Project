@@ -42,6 +42,8 @@ This project is a Bash script that provides a menu-driven interface for managing
     sudo apt update
     sudo apt install zip unzip -y
     ```
+  - Exit: ```sh exit```
+
 ### MacOS
 1. Open a terminal.
 2. Install Homebrew if not already installed.
@@ -59,14 +61,32 @@ After installing the required dependencies, follow these steps to run the projec
    ```sh
    cd Operating-System-Project
    ```
-3. Ensure the script has execute permissions.
+3. Open WSL
+  ```sh
+  wsl
+  ```
+4. Ensure the script has execute permissions.
    ```sh
    chmod +x ./main.sh ./scripts/*.sh
    ```
-4. Run the scripts.
+5. Run the scripts.
    ```sh
    ./main.sh
    ```
+
+**Note**: If you can not run this project on windows, you should install some packages. Follow below:
+```sh
+sudo apt update
+sudo apt install dos2unix
+dos2unix scripts/list_files.sh
+dos2unix scripts/backup.sh
+dos2unix scripts/count_files.sh
+dos2unix scripts/disk_usage.sh
+dos2unix scripts/search.sh
+dos2unix scripts/compress.sh
+dos2unix scripts/logger.sh  
+dos2unix main.sh
+```
 
 ## Usage
 
