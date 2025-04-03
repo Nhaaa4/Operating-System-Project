@@ -77,7 +77,7 @@ After installing the required dependencies, follow these steps to run the projec
    ./main.sh
    ```
 
-**Note**: If you can not run this project on windows, you should install some packages. Follow below:
+**Note**: If you can not run this project on windows, you should install some packages that run in WSL. Follow the instruction below:
 ```sh
 sudo apt update
 sudo apt install dos2unix
