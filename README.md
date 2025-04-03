@@ -42,7 +42,10 @@ This project is a Bash script that provides a menu-driven interface for managing
     sudo apt update
     sudo apt install zip unzip -y
     ```
-  - Exit: ```sh exit```
+  - Exit from WSL: 
+    ```sh 
+    exit
+    ```
 
 ### MacOS
 1. Open a terminal.
