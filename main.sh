@@ -1,4 +1,4 @@
-ws#!/bin/bash
+#!/bin/bash
 
 # Define color codes
 RED='\033[0;31m'
